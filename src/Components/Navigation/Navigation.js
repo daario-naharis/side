@@ -7,7 +7,7 @@ const Navigation = ({isSignedIn,onRouteChange}) =>{
 			<div className='center'>
 				<p  onClick={() => onRouteChange('home')} className='grow fl w-30 b f1 blue pointer'>S.I.D.E.</p>
 				<p className = 'fl w-10'></p>
-				<p className=' fl w-20 f3 b link dim washed-green underline pa3 pointer'>Profile</p>
+				<p onClick={() => onRouteChange('profile')} className=' fl w-20 f3 b link dim washed-green underline pa3 pointer'>Profile</p>
 				<p className = 'fl w-10'></p>
 				<p onClick={() => onRouteChange('signin')} className=' fl w-30 f3 b link dim washed-green underline pa3 pointer'>SignOut</p>
 

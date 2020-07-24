@@ -1,7 +1,7 @@
 import React from 'react' ;
 
 
-const Problem = ({onRouteChange,onCodeChange,onLanguageChange,onInputChange,onButtonSubmit,onButtonCompile}) =>{
+const Problem = ({onCodeChange,onLanguageChange,onInputChange,onButtonSubmit,onButtonCompile}) =>{
 	return(
 		<div >
 			<div>

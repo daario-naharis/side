@@ -1,12 +1,12 @@
 import React from 'react';
 
 
-const CreateContest = () =>{}
+const CreateContest = () =>{
 	return(
 		<div>
-			<input type = text />
+			<input/>
 		</div>
-	);
+	)
 };
 
 export default CreateContest;

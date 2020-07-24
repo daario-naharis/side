@@ -6,13 +6,14 @@ import ContestListDisplayer from './Components/ContestListDisplayer/ContestListD
 import SignIn from './Components/SignIn/SignIn';
 import Register from './Components/Register/Register';
 import Problem from './Components/Problem/Problem';
+import Profile from './Components/Profile/Profile';
 import Result from './Components/Result/Result';
 import Scroll from './Functions/Scroll';
 import './App.css';
 import HackerEarth from 'hackerearth-node';
 
-const hackerEarth=new HackerEarth('','');
-//I removed the secret API key for security reasons :
+const hackerEarth=new HackerEarth('2e9c01fea03ed5c75426d580a4ff85bc34df81e0','');
+//I removed the secret API key for security reasons 
 //use your own API key as first parameter in HackerEarth()
 //for example const hackerEarth=new HackerEarth('SECRET_API_KEY','');
 
@@ -224,7 +225,6 @@ onRouteChange = (route) =>{
           this.state.route === 'problem'
           ?<div>
             <Problem 
-              onRouteChange={this.onRouteChange} 
               onCodeChange={this.onCodeChange}
               onLanguageChange={this.onLanguageChange} 
               onInputChange={this.onInputChange}
@@ -240,9 +240,13 @@ onRouteChange = (route) =>{
             />
           </div>
           :(
-            this.state.route === 'signin'
-            ?<SignIn onRouteChange={this.onRouteChange}/>
-            :<Register onRouteChange={this.onRouteChange}/>
+            this.state.route==='profile'
+            ?<Profile onRouteChange={this.onRouteChange}/>
+            :(
+              this.state.route === 'signin'
+              ?<SignIn onRouteChange={this.onRouteChange}/>
+              :<Register onRouteChange={this.onRouteChange}/>
+              )
             )
           )
       }
