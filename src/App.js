@@ -11,7 +11,7 @@ import Scroll from './Functions/Scroll';
 import './App.css';
 import HackerEarth from 'hackerearth-node';
 
-const hackerEarth=new HackerEarth('2e9c01fea03ed5c75426d580a4ff85bc34df81e0','');
+const hackerEarth=new HackerEarth('','');
 //I removed the secret API key for security reasons 
 //use your own API key as first parameter in HackerEarth()
 //for example const hackerEarth=new HackerEarth('SECRET_API_KEY','');
