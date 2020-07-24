@@ -11,7 +11,7 @@ import Scroll from './Functions/Scroll';
 import './App.css';
 import HackerEarth from 'hackerearth-node';
 
-const hackerEarth=new HackerEarth('','');
+const hackerEarth=new HackerEarth('2e9c01fea03ed5c75426d580a4ff85bc34df81e0','');
 //I removed the secret API key for security reasons 
 //use your own API key as first parameter in HackerEarth()
 //for example const hackerEarth=new HackerEarth('SECRET_API_KEY','');
@@ -28,6 +28,46 @@ const hackerEarth=new HackerEarth('','');
 //isko sahi karne ke liye onButtonCompile aur aur onButtonSubmit ko
 //2 baar run kara denge for loop ka use karke usse ye sahi ho jayega
 
+
+
+
+/*API respone format in case of RUN:
+
+i.e. in case of hackerearth.run()
+
+SUCCESS->
+
+{"run_status": 
+  {"memory_used": "64",
+   "time_limit": 1,
+   "output_html": "hi<br>",
+   "memory_limit": 262144,
+   "time_used": "0.101504",
+   "signal": "OTHER",
+   "exit_code": "0",
+   "status_detail": "NA",
+   "status": "AC",
+   "stderr": "",
+   "output": "hi\n",
+   "async": 0,
+   "request_NOT_OK_reason": "",
+   "request_OK": "True"
+  },
+ "compile_status": "OK",
+ "code_id": "952f82x"
+}
+
+FAILURE->
+
+{"run_status": 
+  {"status": "CE",
+   "status_detail": "Correct the compilation/syntax errors."
+  },
+"compile_status": "",
+"code_id": "91b524n"
+}
+
+*/
 
 class App extends Component{
 
