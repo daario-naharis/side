@@ -12,7 +12,9 @@ import './App.css';
 import HackerEarth from 'hackerearth-node';
 
 const hackerEarth=new HackerEarth('','');
-
+//I removed the secret API key for security reasons 
+//use your own API key as first parameter in HackerEarth()
+//for example const hackerEarth=new HackerEarth('SECRET_API_KEY','');
 
 //ek problem ho rhi hai site me
 //compile wala button click karne pe uske pichhle bar jo code 
