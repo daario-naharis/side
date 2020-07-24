@@ -61,6 +61,7 @@ const Problem = ({onRouteChange,onCodeChange,onLanguageChange,onInputChange,onBu
 					
 				</textarea>
 			</div>
+			<p className="white tl mh4">BUG FOUND : If you want to compile, hit the compile button twice and if you want to run, hit the run button twice</p>
 			<div>
 				<button 
 				type="button"
